@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ELFENOON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+      
+  </head>
+  <body onload="setTimeout(function(){scrollTo(800, 2000);}, 2000)">
+    
+    <script>
+        
+        function scrollTo(to, duration) {
+            console.log("enterd the scroll function ")
+            var start = document.documentElement.scrollTop,
+            change = to - start,
+            currentTime = 0,
+            increment = 20;
+
+            var animateScroll = function(){        
+            currentTime += increment;
+            var val = Math.easeInOutQuad(currentTime, start, change, duration);
+            document.documentElement.scrollTop = val;
+            if(currentTime < duration) {
+                setTimeout(animateScroll, increment);
+            }
+            };
+            animateScroll();
+        }
+
+            //t = current time
+            //b = start value
+            //c = change in value
+            //d = duration
+            Math.easeInOutQuad = function (t, b, c, d) {
+              t /= d/2;
+                if (t < 1) return c/2*t*t + b;
+                t--;
+                return -c/2 * (t*(t-2) - 1) + b;
+            };
+        
+        function autoScroll() {
+            
+            /*document.body.scrollTop = 800;
+            document.documentElement.scrollTop = 800;*/
+            window.scroll({
+                top: 800, 
+                behavior: 'smooth'
+            });
+            
+        }
+        
+    </script>
+    <div class="site-wrap">
+      
+      <nav class="site-menu">
+        <div class="site-menu-inner">
+          <ul class="list-unstyled">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="reservation.html">Reserve A Table</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="site-header">
+        <div class="row align-items-center">
+          <div class="col-5 col-md-3">
+             <ul class="list-unstyled social">
+              <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-2 col-md-6 text-center">
+            <a href="index.html" class="site-logo">ELFENOON</a>
+          </div>
+          <div class="col-5 col-md-3 text-right menu-burger-wrap">
+            <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
+
+          </div>
+        </div>
+       
+      </header> <!-- site-header -->
+      
+      <div class="main-wrap">
+        <div class="cover_1">
+          <div class="img_bg" style="background-image: url(img/entry.JPG);" data-stellar-background-ratio="0.1">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-12" data-aos="fade-up">
+                  <h2 class="heading" align="center">ELFENOON THE ART</h2>
+                    <h2 class="heading" align="center">OF  </h2>
+                  <h2 class="heading" align="center">FOOD AND DECOR </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .cover_1 -->
+          
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+              <div class="col-md-8  text-center">
+                <h2 class="mb-3">Welcome to Elfenoon</h2>
+                <p class="lead">The home of authentic Moroccan cuisine in the heart of Richmond</p>
+              </div>
+            </div>
+            <div class="row large-gutters">
+              <div class="col-md-6"  data-aos="fade-up" data-aos-delay="200">
+                <img src="img/mussels.jpg" alt="Image placeholder" class="img-thumbnail rounded">
+                  
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="accordion" id="accordion">
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Introduction to Moroccan Cuisine <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>Beware Moroccan cuisine is exotic! It is extensive in its variety and remarkable in its taste and aroma. The centuries long history of invasions have contributed to a rich culinary tradition. Being at the crossroads of many civilisations; it is a mix of Arabian, Berber and Mediterranean cuisines – commonly called Moorish. The families of Marrakech, Fez, Casablanca, Tangiers, and indeed the whole regions refined the cuisine over the centuries and created the basis for what we know as Moroccan cuisine today.
+                        </p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+                  
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Authentic Food <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>The delicious taste of Moroccan food is widely attributed to the use of fresh ingredients, aromatic spices and the method of slow cooking over a gentle flame to create each dish. Your patience in adhering to this basic rule will be justly rewarded!</p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+
+                  <div class="accordion-item">
+                    <h3 class="mb-0">
+                      <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">The Elfenoon twist <span class="icon"></span></a>
+                    </h3>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="p-3">
+                        <p>We present to you a small selection of dishes where the combined flavours work well together and we can honestly say that they should produce a meal that you will want to have time and time again! Our chef's extensive 30 year experience in the restaurant business ensures that your visit to Elfenoon will be enjoyable!</p>
+                      </div>
+                    </div>
+                  </div> <!-- .accordion-item -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .section -->
+
+        <div class="section services-section">
+          <div class="container">
+             
+            <div class="row">
+              <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <div class="media feature-icon d-block text-center">
+                  <div class="icon">
+                    <span class="flaticon-soup"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3>Quality Cuisine</h3>
+                    <p>some text here</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="media feature-icon d-block text-center">
+                  <div class="icon">
+                    <span class="flaticon-vegetables"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3>Fresh Food</h3>
+                    <p>something here </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="media feature-icon d-block text-center">
+                  <div class="icon">
+                    <span class="flaticon-pancake"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3>Parties</h3>
+                    <p>We cater for parties large and small alike - from 4 to 60 persons. Whether it is a birthday, hen night or a friends get together, Elfenoon will be a memorable experience. <strong>Parties of 12 or more, the host is the house's guest.</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="media feature-icon d-block text-center">
+                  <div class="icon">
+                    <span class="flaticon-tray"></span>
+                  </div>
+                  <div class="media-body">
+                    <h3>Reservation</h3>
+                    <p>0208 948 8275</p>
+                    <p>info@elfenoon.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!---.section -->
+
+        <div class="site-half-wrap d-block d-lg-flex">
+          <div class="block-half" data-aos="fade">
+            <div class="image-bg-fullwidth" style="background-image: url(img/tangiercouscous%202.jpg);"></div>
+            <div class="half d-block d-lg-flex">
+              <div class="text">
+                <h2 class="mb-4">Hungry?</h2>
+                <p class="mb-4">Moroccan interior design is influenced by the lots of cultures surrounding it. Step into Elfenoon to witness Moroccan design from the jaw dropping brass door to the stunning lanterns around the restaurant.</p>
+                <p><a href="#" class="btn btn-primary btn-outline-primary">View All Menu</a></p>
+              </div>
+              <div class="image" style="background-image: url(img/head.JPG);"></div>
+            </div>
+          </div>
+          <div class="block-half"  data-aos="fade">
+            <div class="half d-block d-lg-flex">
+              <div class="text">
+                <h2 class="mb-4">Exotic decor</h2>
+                <p class="mb-4">Moroccan interior design is influenced by the lots of cultures surrounding it. Step into Elfenoon to witness Moroccan design from the jaw dropping brass door to the stunning lanterns around the restaurant.</p><p><a href="#" class="btn btn-primary btn-outline-primary">Virtual Tour</a></p>
+              </div>
+              <div class="image" style="background-image: url(img/lamp.jpg);"></div>
+            </div>
+            <div class="image-bg-fullwidth" style="background-image: url(img/tea.jpg);"></div>
+          </div>
+        </div>
+
+        <div class="section" data-aos="fade">
+          <div class="container">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
+              <div class="col-md-8">
+                <div class="owl-carousel home-slider-loop-false">
+
+                
+                  <div class="item">
+                    <blockquote class="testimonial">
+                      <p>&ldquo;Sensational flavour combinations. We were so impressed with the delicious and authentic dishes. Interesting and tasty starters, fantastic tagines. Beautifully decorated inside.&rdquo;</p>
+                      <div class="author">
+                          <a href="https://www.google.com/maps/contrib/102442437003482812379/reviews/@49.6577168,10.9878077,5z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB">
+                        <img src="img/gavin.png" alt="Image placeholder" class="mb-3"></a>
+                        <h4>Gavin Sandison</h4>
+                        <p>Google Reviews</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="item">
+                    <blockquote class="testimonial">
+                      <p>&ldquo;What a great find! Genuinely delicious food, great atmosphere and very friendly staff. Some incredible flavoursome vegan dishes too. Overall I loved our experience, hence 5 stars. I hope to come back.&rdquo;</p>
+                      <div class="author">
+                        <a href="https://www.google.com/maps/contrib/111009229757458008880/reviews/@48.9171948,3.4117136,6z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB">
+                        <img src="img/tom.png" alt="Image placeholder" class="mb-3"></a>
+                        <h4>Tom Greenwood</h4>
+                        <p>Google Reviews</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div> <!-- .section -->
+          
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-7 text-center"  data-aos="fade-up">
+                <h2 class="mb-4">Popular dishes</h2>
+                <p class="lead">The following are some of the most popular dishes at ElFenoon...</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .section -->
+        
+        <div class="section pt-0 pb-0">
+
+          <div class="menus d-flex bg-light">
+            <div class="d-flex item">
+              <div class="image" style="background-image: url(img/mussels.jpg);" data-aos="fade"></div>
+              <div class="text">
+                <h3>Mussels</h3>
+                <p>Stir fried mussels with Marakchi lemon, garlic, flat leafed parsley and fresh chilli</p>
+                
+              </div>
+            </div> <!-- .item -->
+
+            <div class="d-flex item">
+              <div class="image order-2 order-md-1"  style="background-image: url(img/tangiercouscous.jpg);" data-aos="fade" data-aos-delay="100"></div>
+              <div class="text order-1 order-md-2">
+                <h3>Chicken Sultanas Cous Cous</h3>
+                <p>Chicken breast cooked with sweet sultanas, caramelised onions and chick peas.</p>
+                
+              </div>
+            </div> <!-- .item -->
+
+            <div class="d-flex item">
+              <div class="image order-1 order-md-2 order-lg-2 order-xl-1" style="background-image: url(img/vegTagine.jpg);" data-aos="fade" data-aos-delay="200"></div>
+              <div class="text order-2 order-md-1 order-lg-1 order-xl-2">
+                <h3>Atlas Vegetarian Tagine</h3>
+                <p>A mix of fresh vegetables in a tangy tomato sauce served in a tagine , with a side of couscous.</p>
+                
+                
+              </div>
+            </div> <!-- .item -->
+
+            <div class="d-flex item">
+              <div class="image order-2" style="background-image: url(img/vegcouscous.jpg);" data-aos="fade" data-aos-delay="300"></div>
+              <div class="text order-1 mb-3">
+                <h3>Vegetable Cous Cous</h3>
+                <p>A selection of fresh vegetables traditionally flavoured, and served on a bed of couscous.</p>
+                
+              </div>
+            </div> <!-- .item -->
+
+            <div class="d-flex item">
+              <div class="image order-1 order-lg-1 order-xl-2" style="background-image: url(img/barcoq.jpg);" data-aos="fade" data-aos-delay="400"></div>
+              <div class="text order-2 order-lg-2 order-xl-1">
+                <h3>Elham Barcoq Tagine </h3>
+                <p>Lamb with prune in a subtle cinnamon flavored jus. Served with pitta bread</p>
+                
+              </div>
+            </div> <!-- .item -->
+
+            <div class="d-flex item">
+              <div class="image order-2 order-md-1 order-lg-1 order-xl-2" style="background-image: url(img/bastilla.jpg);" data-aos="fade" data-aos-delay="500"></div>
+              <div class="text order-1 order-md-2 order-lg-2 order-xl-1">
+                <h3>Chicken Bastilla</h3>
+                <p>An elaborate sweet and savoury filling in pastry with saffron, grilled almonds and cinnamon, baked until crisp. Served with Chefs salad </p>
+                
+              </div>
+            </div> <!-- .item -->
+
+          </div>
+        </div> <!-- .section -->
+
+        
+
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8" data-aos="fade-up">
+
+                <h2 class="mb-5 text-center">Menu</h2>
+
+                <ul class="nav site-tab-nav" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-starters-tab" data-toggle="pill" href="#pills-starters" role="tab" aria-controls="pills-starters" aria-selected="true">Starters</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-mezza-tab" data-toggle="pill" href="#pills-mezza" role="tab" aria-controls="pills-mezza" aria-selected="false">Mezza</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-tagines-tab" data-toggle="pill" href="#pills-tagines" role="tab" aria-controls="pills-tagines" aria-selected="false">Tagines</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-bastillas-tab" data-toggle="pill" href="#pills-bastillas" role="tab" aria-controls="pills-bastillas" aria-selected="false">Bastillas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-CousCous-tab" data-toggle="pill" href="#pills-CousCous" role="tab" aria-controls="pills-CousCous" aria-selected="false">CousCous </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-veg-tab" data-toggle="pill" href="#pills-veg" role="tab" aria-controls="pills-veg" aria-selected="false">Vegetarian</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-sides-tab" data-toggle="pill" href="#pills-sides" role="tab" aria-controls="pills-sides" aria-selected="false">Sides</a>
+                  </li>
+                </ul>
+                
+                  <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab">
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Harira</a></h3>
+                        <p>A traditional Moroccan tomato soup with lentils, chickpeas, celery, coriander, egg and parsley.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£6.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Danjal</a></h3>
+                        <p>Sautéed aubergine, grilled peppers , flat leaf parsley, cumin, olive oil, rose water and a splash of lemon. Served with pitta bread. </p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Kobiza</a></h3>
+                        <p>Baby leaf spinach and olives sautéed with coriander, garlic, lemon juice and harissa. </p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Shlada Salad</a></h3>
+                        <p>Grilled Haloumi, chargrilled peppers, caramelised fig, toasted almond on a tomato and green leaf salad, with a honeyed vinaigrette and argan oil dressing</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£8.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Tiger Prawns</a></h3>
+                        <p>Marinated in Chermoula, lightly fried and tossed in harissa.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£8.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Mussels</a></h3>
+                        <p>Stir fried mussels with Marakchi lemon, garlic, flat leafed parsley and fresh chilli</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£8.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Liver</a></h3>
+                        <p>Spicy lamb liver tossed in olive oil , parsley , garlic and ginger. Served with a side salad.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Baby Octopus</a></h3>
+                        <p>Seasoned and flame grilled with jalapeno, paprika and a splash of lemon.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£8.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Fresh Sardines</a></h3>
+                        <p>Marinated in Chermoula ( parsley , lemon , harissa , paprika ) , lightly fried</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Moch</a></h3>
+                        <p>A traditional desert dish of lambs brain cooked with free range eggs, garlic and parsley. Served with toasted bread.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Merguez</a></h3>
+                        <p>Hot and spicy Moroccan lamb sausage on a tangy tomato base. Served with a side salad.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£7.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-mezza" role="tabpanel" aria-labelledby="pills-mezza-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Mezza for two</a></h3>
+                        <p>Two starters, main courses ( £4.00 extra for lamb) and desserts with a bottle of house wine.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£75</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Mezza for parties</a></h3>
+                        <p>Chef's selection of starters for sharing, your choice of main course, followed by our Moroccan pastries to share. With a half bottle of house wine per person</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£35 pp</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-tagines" role="tabpanel" aria-labelledby="pills-tagines-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">ASSILAH</a></h3>
+                        <p>Chicken breast with vegetables, saffron, cumin and ginger on a tomato base. Served with a side of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£17.00</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">ESSAOUIRA</a></h3>
+                        <p>Chicken or Lamb in olive oil with potato, peas, olives, saffron, garlic, and preserved lemon</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£15/£17</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">CAMEL BI TIMAR</a></h3>
+                        <p>Camel fillet marinated in a date and fig sauce, with a hint of fiery harissa. Served with bread.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£24</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">ELHAM BARCOQ</a></h3>
+                        <p>Lamb with prune in a subtle cinnamon flavored jus. Served with pitta bread</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£17</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">MARRAKECH LAMB</a></h3>
+                        <p>Lamb with a selection of fresh vegetables, saffron, cumin, ginger and flat leaf parsley. Served with a side of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£18</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Tagine of Fish</a></h3>
+                        <p>Fish of the day marinated in chermoula, cooked with vegetables in tomato maticha. Served with a side of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£18</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Rabbit Knia</a></h3>
+                        <p>Fillet of rabbit in olive oil, with sultanas, caramelised onion and saffron. Served with a side of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£18</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">BEEF LISSAN</a></h3>
+                        <p>A famous Marrakech dish of tenderised tongue cooked with chickpea, raisins, cinnamon, harissa, ginger and fresh parsley. Served with Spicy Wheat</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£17</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">MARRAKECH TANGIA</a></h3>
+                        <p>Slow cooked beef until tender in a special terracotta pot with our ras el hanout spice blend and pickled lemon. Served with fresh vegetables and couscous on the side.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£20</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                  </div>
+                      
+                  <div class="tab-pane fade" id="pills-bastillas" role="tabpanel" aria-labelledby="pills-bastillas-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">CHICKEN BASTILA</a></h3>
+                        <p>An elaborate sweet and savoury filling in pastry with saffron, grilled almonds and cinnamon, baked until crisp. Served with Chefs salad.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£20</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">RABBIT BASTILA</a></h3>
+                        <p>Fillet of rabbit, sultanas, grilled almonds and caramelised onion baked until crisp in a filo pastry, topped with honey and sesame seeds. Served with Chefs salad.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£20</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">FISH BASTILLA</a></h3>
+                        <p>Selection of fish fillets and seafood in Rass el hanout, lemon juice parsley, harissa, parceled in filo pastry, baked until crisp.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£22</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                  </div>
+                      
+                  <div class="tab-pane fade" id="pills-CousCous" role="tabpanel" aria-labelledby="pills-CousCous-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Chicken Sultanas</a></h3>
+                        <p>Chicken breast cooked with sweet sultanas, caramelised onions and chick peas.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£15</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Chicken Veg</a></h3>
+                        <p>Chicken breast flavoured with spices accompanied with fresh vegetables of the day</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£17</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Lamb Bi Zbib</a></h3>
+                        <p>Lamb cooked in a sweet sauce with sultanas , caramelised onions and chick peas</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£17</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Lamb Veg</a></h3>
+                        <p>Lamb cooked in traditional spices with fresh vegetables of the day</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£18</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">ELFENOON Couscous</a></h3>
+                        <p>Slow cooked lamb and chicken breast with traditionally flavoured vegetables, sweet sultanas, caramelised onions and chick peas.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£20</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                  </div>
+                  
+                  <div class="tab-pane fade" id="pills-veg" role="tabpanel" aria-labelledby="pills-veg-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Vegetable Couscous</a></h3>
+                        <p>A selection of fresh vegetables traditionally flavoured, and served on a bed of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£14</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Atlas Vegetarian</a></h3>
+                        <p>A mix of fresh vegetables in a tangy tomato sauce served in a tagine , with a side of couscous.</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£14</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Vegetarian mix</a></h3>
+                        <p>Kobiza and Danjal served with couscous and bread</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£16</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Shlada Salad MAIN</a></h3>
+                        <p>Grilled Haloumi, chargrilled peppers, caramelised fig, toasted almond on a tomato and green leaf salad, with a honeyed vinaigrette and argan oil dressing</p>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£14</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+
+                  </div>
+                  
+                  <div class="tab-pane fade" id="pills-sides" role="tabpanel" aria-labelledby="pills-sides-tab">
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Bread</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£2</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Side Vegetables</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£4.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Couscous</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£3</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                      
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Rice</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£3</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Bulgur</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£4</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Olives</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£2.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+                    <div class="d-block d-md-flex menu-food-item">
+                      <div class="text order-1 mb-3">
+                        <h3><a href="#">Olives</a></h3>
+                      </div>
+                      <div class="price order-2">
+                        <strong>£4.50</strong>
+                      </div>
+                    </div> <!-- .menu-food-item -->
+                    
+
+                    
+
+                  </div>
+                      
+                      
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="section bg-light">
+          <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+              <div class="col-md-8  text-center">
+                <h2 class="mb-3">Events &amp; News</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fuga, alias distinctio voluptatum magni voluptatibus.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="media d-block d-lg-flex mb-5"  data-aos="fade-up" data-aos-delay="100">
+                  <figure class="mr-4 horizontal">
+                    <img src="img/news_1.jpg" alt="Image placeholder" class="img-fluid">
+                  </figure>
+                  <div class="media-body">
+                    <h3><a href="#">Birthday Party Held in Diner Restaurant</a></h3>
+                    <p class="post-meta"><span><span class="fa fa-calendar"></span> April 22, 2018</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus</p>
+                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                  </div>
+                </div> 
+
+                <div class="media d-block d-lg-flex mb-5"  data-aos="fade-up">
+                  <figure class="mr-4 horizontal">
+                    <img src="img/news_2.jpg" alt="Image placeholder" class="img-fluid" data-aos-delay="200">
+                  </figure>
+                  <div class="media-body">
+                    <h3><a href="#">Drinks Overload</a></h3>
+                    <p class="post-meta"><span><span class="fa fa-calendar"></span> April 22, 2018</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus</p>
+                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                  </div>
+                </div> 
+
+                <div class="media d-block d-lg-flex mb-5"  data-aos="fade-up"  data-aos-delay="300">
+                  <figure class="mr-4 horizontal">
+                    <img src="img/img_1.jpg" alt="Image placeholder" class="img-fluid">
+                  </figure>
+                  <div class="media-body">
+                    <h3><a href="#">New Recipe: Steak Steak Steak.</a></h3>
+                    <p class="post-meta"><span><span class="fa fa-calendar"></span> April 22, 2018</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus</p>
+                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                  </div>
+                </div> 
+
+
+              </div> 
+
+              <div class="col-lg-6">
+                <div class="media d-block mb-5" data-aos="fade-up"  data-aos-delay="400">
+                  <figure>
+                    <a href="#"><img src="img/news_1_large.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  </figure>
+                  <div class="media-body">
+                    <h3><a href="#">Food that are best for your overall health</a></h3>
+                    <p class="post-meta"><span><span class="fa fa-calendar"></span> April 22, 2018</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus</p>
+                    <p><a href="#" class="btn btn-primary btn-outline-primary btn-sm">Read More</a></p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>  .section -->
+
+
+
+        
+
+      </div> <!-- .main-wrap -->
+      
+
+      <footer>
+        <div class="site-footer">
+          <div class="container">
+            <div class="row small-gutters mb-5">
+              
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+                <div class="footer-widget">
+                  <h3>Opening times</h3>
+                  <p>Monday: Closed</p>
+                  <p>Tuesday - Friday: 17:00 - 23:30</p>
+                  <p>Saturday &amp; Sunday : 12:00 - 23:30</p>
+                    
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="300">
+                <div class="footer-widget">
+                  <h3>Company information</h3>
+                  <p>ELFENOON HAYAT LTD, registered as a limited company in [England and Wales] under company number:11898799. Registered Company Address: 149 Kew Road, Richmond, United Kingdom, TW9 2PN.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
+                <div class="footer-widget footer-contact-widget">
+
+                  <h3>Contact Us</h3>
+                  <p class="contact-email">info@elfenoon.com</p>
+                  <p class="contact-phone">0208 948 8275</p>
+                  
+                  
+                </div>
+              </div>
+            
+            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="300">
+                <div class="footer-widget">
+                  <h3>Where to find us?</h3>
+                  <p>149 Kew Road, Richmond, United Kingdom, TW9 2PN.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+
+      <div class="site-footer-copyright">
+        <div class="container">
+          <div class="row">
+
+             <p class="footer-text col-md-12">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Web design by <a href="https://github.com/faridelaouadi" target="_blank">Farid</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/aos.js"></script>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
