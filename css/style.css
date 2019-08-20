@@ -116,7 +116,7 @@ textarea.form-control {
 /* Site Menu*/
 .site-menu {
   display: none;
-  background: black;
+  background-color:rgb(0,0,0);opacity:0.7;
   left: 0;
   right: 0;
   bottom: 0;
@@ -232,7 +232,7 @@ textarea.form-control {
 }
 
 .site-header.scrolled .site-nav-toggle {
-  top: -5px;
+  top: -10px;
 }
 
 .site-header.scrolled .site-nav-toggle i, .site-header.scrolled .site-nav-toggle i:before, .site-header.scrolled .site-nav-toggle i:after {
