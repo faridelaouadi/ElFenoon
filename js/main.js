@@ -72,11 +72,9 @@ AOS.init({
         $('.site-menu .site-menu-inner > ul > li').each(function(i) {
 
           var that = $(this);
-          setTimeout(function() {
-            that.removeClass('is-show');
-          }, i * 100);
+          
 
-          // $(this).removeClass('is-show');
+          $(this).removeClass('is-show');
         });
       
       setTimeout(function() {
